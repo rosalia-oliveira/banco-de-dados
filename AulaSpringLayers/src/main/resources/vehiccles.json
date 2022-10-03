@@ -1,0 +1,21 @@
+[
+  {
+    "licensePlate": "AAA 1919",
+    "model": "Fox",
+    "year": 2019,
+    "price": "26.000"
+  },
+  {
+    "licensePlate": "BBB 2020",
+    "model": "Fox",
+    "year": 2020,
+    "price": "36.000"
+  }
+ ,
+  {
+    "licensePlate": "CCC 2121",
+    "model": "Fox",
+    "year": 2021,
+    "price": "46.000"
+  }
+]
