@@ -9,3 +9,5 @@ public interface IVehicle {
     List<Vehicle> getAllVehicle();
     List<Vehicle> getVehiclesOrderByValue();
 }
+
+// Commit atualizado
