@@ -1,10 +1,10 @@
 package com.bootcamp.pratica1javaiii.service;
 
-import com.bootcamp.pratica1javaiii.model.Symptoms;
+import com.bootcamp.pratica1javaiii.model.Symptom;
 
 import java.util.List;
 
 public interface ISymptom {
-    List<Symptoms> getAllSymptoms();
+    List<Symptom> getAllSymptoms();
     Object getSymptomByName(String name);
 }

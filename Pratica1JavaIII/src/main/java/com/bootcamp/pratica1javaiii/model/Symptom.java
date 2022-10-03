@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Symptoms {
+public class Symptom {
     private String code;
     private String name;
     private int gravityLevel;
