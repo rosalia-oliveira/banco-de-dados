@@ -1,6 +1,6 @@
 package com.bootcamp.aulaspringlayers.controller;
 
-import com.bootcamp.aulaspringlayers.exception.VehicleNotFoundException;
+import com.bootcamp.aulaspringlayers.exception.NotFoundException;
 import com.bootcamp.aulaspringlayers.model.Vehicle;
 import com.bootcamp.aulaspringlayers.service.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/vehicles")
 public class VehicleController {
@@ -20,16 +22,20 @@ public class VehicleController {
 
     @GetMapping("/{licensePlate}")
     public ResponseEntity<Vehicle> getVehicle(@PathVariable String licensePlate) {
-        VehicleNotFoundException vehicle = service.getVehicle(licensePlate);
-
-        if(vehicle != null) {
-            return new ResponseEntity<>(vehicle, HttpStatus.OK);
-        }
-        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        Vehicle vehicle = service.getVehicle(licensePlate);
+        return new ResponseEntity<>(vehicle, HttpStatus.OK);
     }
 
     @GetMapping()
-    public ResponseEntity<String> getMessageTest() {
-        return new ResponseEntity<>("Deu certo", HttpStatus.OK);
+    public ResponseEntity<List<Vehicle>> getAllVehicles() {
+        return new ResponseEntity<>(service.getAllVehicle(), HttpStatus.OK);
+    }
+
+    @GetMapping("/order")
+    public ResponseEntity<List<Vehicle>> getVehiclesOrderByValue() {
+        return new ResponseEntity<>(service.getVehiclesOrderByValue(), HttpStatus.OK);
     }
 }
+
+
+// -Dcom.sun.management.jmxremote.local.only=false

@@ -1,0 +1,22 @@
+[{
+  "code": "A1",
+  "name": "Febre",
+  "gravityLevel": 1
+},
+  {
+    "code": "A2",
+    "name": "Tosse",
+    "gravityLevel": 2
+  }, {
+  "code": "A2",
+  "name": "Falta de ar",
+  "gravityLevel": 3
+}, {
+  "code": "A3",
+  "name": "Dor de garganta",
+  "gravityLevel": 3
+}, {
+  "code": "A5",
+  "name": "Dores no Peito",
+  "gravityLevel": 5
+}]
