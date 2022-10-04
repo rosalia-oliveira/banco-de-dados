@@ -34,8 +34,9 @@ public class PersonController {
     }
 
     @GetMapping()
-    public ResponseEntity<List<PersonDTO>> getPersonRisk() {
-        return null;
+    public ResponseEntity<PersonDTO> getPersonRisk() {
+        PersonDTO risk = new PersonDTO(personServ.getPersonRisk());
+        return new ResponseEntity<>(risk, HttpStatus.OK);
     }
 
 }

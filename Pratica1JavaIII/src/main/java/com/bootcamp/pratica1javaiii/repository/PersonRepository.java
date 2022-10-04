@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 @Repository
 public class PersonRepository {
     private final String personRepo = "src/main/resources/persons.json";
-//    private final List<Symptom> symptomRepo = new SymptomRepository().getAllSymptoms();
+    private final List<Symptom> symptomRepo = new SymptomRepository().getAllSymptoms();
     ObjectMapper mapper = new ObjectMapper();
 
     public List<Person> getAllPersons() {
@@ -31,13 +31,13 @@ public class PersonRepository {
     public List<Person> getPersonByAge(int age) {
         List<Person> listPerson = getAllPersons();
         return listPerson.stream()
-                .filter(symptom -> symptom.getAge() >= age)
+                .filter(person -> person.getAge() >= age)
                 .collect(Collectors.toList());
     }
 
     public List<Person> getPersonRisk() {
         List<Person> risk = getPersonByAge(60).stream()
-                .filter(person -> person.getSymptom().length == 0)
+                .filter(person -> person.getSymptoms().size() != 0)
                 .collect(Collectors.toList());
         return risk;
     }
