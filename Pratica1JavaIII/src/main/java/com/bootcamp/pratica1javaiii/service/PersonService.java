@@ -24,7 +24,8 @@ public class PersonService implements IPerson {
     }
 
     @Override
-    public List<Person> getPersonRisk() {
-        return repository.getPersonRisk();
+    public List<Person> getRiskPerson() {
+        return repository.getRiskPerson();
     }
+
 }

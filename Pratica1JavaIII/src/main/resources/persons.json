@@ -2,36 +2,30 @@
   "id": 1,
   "name": "Afonso",
   "lastName": "II",
-  "age": 60,
-  "symptoms": []
+  "age": 60
 }, {
   "id": 2,
   "name": "Alexandre",
   "lastName": "III",
-  "age": 55,
-  "symptoms": []
+  "age": 55
 },  {
   "id": 3,
   "name": "Arthur",
   "lastName": "I",
-  "age": 40,
-  "symptoms": ["A1"]
+  "age": 40
 }, {
   "id": 4,
   "name": "Carlos",
   "lastName": "XVI",
-  "age": 36,
-  "symptoms": ["A1", "A3"]
+  "age": 36
 }, {
   "id": 5,
   "name": "Guilherme",
   "lastName": "Alexandre",
-  "age": 25,
-  "symptoms": ["A1"]
+  "age": 25
 }, {
   "id": 6,
   "name": "Rodolfo",
   "lastName": "II",
-  "age": 65,
-  "symptoms": ["A5"]
+  "age": 65
 }]

@@ -20,7 +20,6 @@ public class PersonController {
 
     @Autowired
     private PersonService personServ;
-    private SymptomService symptomServ;
 
     @GetMapping("/all")
     public ResponseEntity<List<Person>> getAllPersons() {
@@ -34,9 +33,11 @@ public class PersonController {
     }
 
     @GetMapping()
-    public ResponseEntity<PersonDTO> getPersonRisk() {
-        PersonDTO risk = new PersonDTO(personServ.getPersonRisk());
-        return new ResponseEntity<>(risk, HttpStatus.OK);
+    public ResponseEntity<List<PersonDTO>> getPersonRiskAndSymptoms() {
+        List<Person> risk = personServ.getRiskPerson();
+        List<PersonDTO> listRiskPerson = risk.stream()
+                .map(person -> new PersonDTO(person)).collect(Collectors.toList());
+        return new ResponseEntity<>(listRiskPerson, HttpStatus.OK);
     }
 
 }

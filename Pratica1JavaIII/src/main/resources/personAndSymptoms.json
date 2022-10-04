@@ -1,0 +1,19 @@
+[{
+  "personId": 1,
+  "symptoms": ""
+}, {
+  "personId": 2,
+  "symptoms": "A5"
+},  {
+  "personId": 3,
+  "symptoms": "A1"
+}, {
+  "personId": 4,
+  "symptoms": "A2"
+}, {
+  "personId": 5,
+  "symptoms": ""
+}, {
+  "personId": 6,
+  "symptoms": "A2"
+}]

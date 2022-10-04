@@ -1,7 +1,7 @@
 package com.bootcamp.pratica1javaiii.repository;
 
 import com.bootcamp.pratica1javaiii.model.Person;
-import com.bootcamp.pratica1javaiii.model.Symptom;
+import com.bootcamp.pratica1javaiii.model.PersonAndSymptom;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Repository;
 
@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 @Repository
 public class PersonRepository {
     private final String personRepo = "src/main/resources/persons.json";
-    private final List<Symptom> symptomRepo = new SymptomRepository().getAllSymptoms();
+    private final PersonAndSymptomRepository PAndSRepo = new PersonAndSymptomRepository();
     ObjectMapper mapper = new ObjectMapper();
 
     public List<Person> getAllPersons() {
@@ -35,10 +35,12 @@ public class PersonRepository {
                 .collect(Collectors.toList());
     }
 
-    public List<Person> getPersonRisk() {
-        List<Person> risk = getPersonByAge(60).stream()
-                .filter(person -> person.getSymptoms().size() != 0)
-                .collect(Collectors.toList());
-        return risk;
+    public List<Person> getRiskPerson() {
+        List<PersonAndSymptom> pSRepo = PAndSRepo.getAllPersonAndSymptom();
+        List<Person> persons = getPersonByAge(60).stream()
+                .filter(person -> pSRepo.stream().anyMatch( ps -> ps.getPersonId() == person.getId() && !ps.getSymptoms().isEmpty())
+                ).collect(Collectors.toList());
+        return persons;
     }
+
 }

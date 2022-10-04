@@ -7,5 +7,5 @@ import java.util.List;
 public interface IPerson {
     List<Person> getAllPersons();
     List<Person> getPersonByAge(int age);
-    List<Person> getPersonRisk();
+    List<Person> getRiskPerson();
 }

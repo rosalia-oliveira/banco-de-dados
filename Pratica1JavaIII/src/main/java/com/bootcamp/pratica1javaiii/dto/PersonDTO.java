@@ -10,10 +10,8 @@ public class PersonDTO {
     private String name;
     private String lastName;
 
-    public PersonDTO(List<Person> person) {
-        person.stream().forEach(p -> {
-            this.name = p.getName() ;
-            this.lastName = p.getLastName();
-        });
+    public PersonDTO(Person person) {
+        this.name = person.getName() ;
+        this.lastName = person.getLastName();
     }
 }
