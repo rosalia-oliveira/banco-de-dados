@@ -16,4 +16,5 @@ public class Vehicle {
     private String model;
     private Integer year;
     private Integer price;
+    private int owner_id;
 }

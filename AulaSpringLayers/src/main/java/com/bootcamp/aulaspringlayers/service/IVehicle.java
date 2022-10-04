@@ -10,4 +10,3 @@ public interface IVehicle {
     List<Vehicle> getVehiclesOrderByValue();
 }
 
-// Commit atualizado

@@ -3,19 +3,22 @@
     "licensePlate": "AAA 1919",
     "model": "Fox",
     "year": 2019,
-    "price": 36.000
+    "price": 36.000,
+    "owner_id": 2
   },
   {
     "licensePlate": "BBB 2020",
     "model": "Fox",
     "year": 2022,
-    "price": 58.000
+    "price": 58.000,
+    "owner_id": 4
   }
  ,
   {
     "licensePlate": "CCC 2121",
     "model": "Fox",
     "year": 2017,
-    "price": 46.000
+    "price": 46.000,
+    "owner_id": 1
   }
 ]
