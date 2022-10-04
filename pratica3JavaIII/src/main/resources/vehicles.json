@@ -1,0 +1,17 @@
+[{
+  "brand": "Chevrolet",
+  "model": "Corsa",
+  "manufacturingDate": "2000-11-20",
+  "numberOfKilometers": "115000",
+  "doors": "5",
+  "price": "9000",
+  "currency": "AR",
+  "services": [
+    {
+      "date": "2003-05-20",
+      "kilometers": "60000",
+      "descriptions": "Change air filters"
+    }
+  ],
+  "countOfOwners": "2"
+}]
