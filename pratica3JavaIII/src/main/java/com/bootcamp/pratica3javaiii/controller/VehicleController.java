@@ -26,7 +26,7 @@ public class VehicleController {
         return new ResponseEntity<>(service.getAllWithoutService(), HttpStatus.OK);
     }
 
-    @GetMapping("date")
+    @GetMapping("/date")
     public ResponseEntity<List<Vehicle>> getByManufacturingDate(@RequestParam String dates) {
         return new ResponseEntity<>(service.getByManufacturingDate(dates), HttpStatus.OK);
     }
