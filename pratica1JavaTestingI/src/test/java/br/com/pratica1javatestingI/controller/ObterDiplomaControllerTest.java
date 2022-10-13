@@ -23,12 +23,6 @@
 //    @MockBean
 //    private ObterDiplomaService obterDiplomaService;
 //
-////    JSONObject mock = {
-////            "studentName": "Juan",
-////            "subjects": [{ "name": "Matemática", "score": 0},
-////    {"name": "física", "score": 7 },
-////    {"name": "Química", "score": 6}]
-////};
 //
 //@BeforeEach
 //    void setUp(){
