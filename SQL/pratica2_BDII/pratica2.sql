@@ -53,3 +53,34 @@ ON emp.depto_nro = dep.depto_nro
 WHERE emp.cargo like 'vendedor'
 ORDER BY emp.salario DESC
 LIMIT 1;
+
+
+-- Daqui em diante, refere-se ao banco de dados movies_db
+SELECT *
+FROM movies
+WHERE id
+          NOT IN (SELECT favorite_movie_id FROM actors);
+
+SELECT series.title, COUNT(*) AS temporadas
+FROM series
+         INNER JOIN seasons ON series.id = seasons.serie_id
+GROUP BY series.id
+HAVING temporadas > 5;
+
+SELECT series.title, COUNT(*) AS temporadas
+FROM series
+         INNER JOIN seasons ON series.id = seasons.serie_id
+GROUP BY series.id
+ORDER BY temporadas DESC
+    LIMIT 3;
+
+SELECT act.first_name, act.last_name
+FROM actors AS act
+         INNER JOIN actor_movie AS actm ON actm.id = act.id
+         INNER JOIN movies ON movies.id = actm.movie_id
+WHERE movies.rating > 9.1;
+
+SELECT act.first_name, act.last_name
+FROM actors AS act
+         INNER JOIN actor_movie AS actm ON act.id = actm.id
+WHERE actm.movie_id IN (SELECT id FROM movies WHERE rating > 9.1);
