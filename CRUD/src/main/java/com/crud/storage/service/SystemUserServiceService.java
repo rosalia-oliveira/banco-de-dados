@@ -6,18 +6,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.management.openmbean.KeyAlreadyExistsException;
 import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
-public class SystemUserService implements ISystemUser {
+public class SystemUserServiceService implements ISystemUserService {
     @Autowired
     private SystemUserRepository userRepo;
 
     @Override
     public SystemUser create(SystemUser newUser) {
-        userRepo.save(newUser);
-        return newUser;
+        if(getByName(newUser.getName()) != null) {
+            throw new KeyAlreadyExistsException(newUser.getName() + " Already exists in DB!");
+        }
+        return userRepo.saveAndFlush(newUser);
     }
 
     @Override
@@ -33,7 +36,7 @@ public class SystemUserService implements ISystemUser {
         if(userId != null) {
             userRepo.save(updated);
         } else {
-            throw new NoSuchElementException();
+            throw new NoSuchElementException("User Not Found!");
         };
         return userId;
     }
@@ -42,6 +45,11 @@ public class SystemUserService implements ISystemUser {
     @Transactional(readOnly = true)
     public SystemUser getById(Long id) {
         return userRepo.findById(id).orElse(null);
+    }
+
+    @Override
+    public SystemUser getByName(String name) {
+        return userRepo.findByName(name);
     }
 
     @Override

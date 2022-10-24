@@ -4,7 +4,7 @@ import com.crud.storage.model.Student;
 
 import java.util.List;
 
-public interface IStudent {
+public interface IStudentService {
     public List<Student> getStudents();
     public void saveStudent (Student student);
     public void deleteStudent (Long id);

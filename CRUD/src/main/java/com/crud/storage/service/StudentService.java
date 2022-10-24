@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class StudentService implements IStudent {
+public class StudentService implements IStudentService {
     @Autowired
     private final StudentRepository studentRepository;
 
