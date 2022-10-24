@@ -1,7 +1,8 @@
-package com.crud.crud.service;
+package com.crud.storage.service;
 
-import com.crud.crud.model.Student;
-import com.crud.crud.repository.StudentRepository;
+import com.crud.storage.model.Student;
+import com.crud.storage.repository.StudentRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -9,7 +10,7 @@ import java.util.List;
 
 @Service
 public class StudentService implements IStudent {
-
+    @Autowired
     private final StudentRepository studentRepository;
 
     public StudentService(StudentRepository studentRepository) {

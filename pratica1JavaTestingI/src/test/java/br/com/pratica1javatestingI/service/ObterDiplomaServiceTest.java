@@ -40,7 +40,7 @@ class ObterDiplomaServiceTest {
         subjects.add(subject1);
         subjects.add(subject2);
         studentDTOMock = new StudentDTO("Juan", subjects);
-        studentDTOMockReturn = new StudentDTO("Juan", "O aluno Juan obteve uma média de 8,00. Aprovado.", 8.0, subjects);
+        studentDTOMockReturn = new StudentDTO("Juan", "O aluno Juan obteve uma média de 8. Aprovado.", 8.0, subjects);
     }
 
     @Test

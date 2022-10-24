@@ -1,6 +1,6 @@
-package com.crud.crud.service;
+package com.crud.storage.service;
 
-import com.crud.crud.model.Student;
+import com.crud.storage.model.Student;
 
 import java.util.List;
 

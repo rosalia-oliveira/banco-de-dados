@@ -1,6 +1,6 @@
-package com.crud.crud.repository;
+package com.crud.storage.repository;
 
-import com.crud.crud.model.Student;
+import com.crud.storage.model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
