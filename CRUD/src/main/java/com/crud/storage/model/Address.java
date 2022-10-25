@@ -20,6 +20,6 @@ public class Address {
     private String location;
 
     @OneToOne
-    @JoinColumn(name = "id_author")
+    @JoinColumn(name = "author_id")
     private Author author;
 }
