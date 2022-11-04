@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="74bbd094-4edf-4816-99b7-c1506141d8d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../praticasStorage/src/main/java/com/br/praticasstorage/QABugs/advisor/ExceptionDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../praticasStorage/src/main/java/com/br/praticasstorage/QABugs/advisor/HandlesException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../praticasStorage/src/main/java/com/br/praticasstorage/QABugs/advisor/exception/IllegalArgumentException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../praticasStorage/src/main/java/com/br/praticasstorage/QABugs/advisor/exception/NoSuchElementException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../praticasStorage/src/main/java/com/br/praticasstorage/QABugs/controller/TestCaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../praticasStorage/src/main/java/com/br/praticasstorage/QABugs/model/TestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../praticasStorage/src/main/java/com/br/praticasstorage/QABugs/repository/TestCaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../praticasStorage/src/main/java/com/br/praticasstorage/QABugs/service/TestCaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../praticasStorage/src/main/java/com/br/praticasstorage/QABugs/service/interfaces/ITestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storage/src/main/java/com/meli/storage/StorageApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storage/src/test/java/com/meli/storage/StorageApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Gfsnv1c64Xc58jvONDMSNO3vDL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74bbd094-4edf-4816-99b7-c1506141d8d7" name="Changes" comment="" />
+      <created>1666791143771</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666791143771</updated>
+      <workItem from="1666791145832" duration="4000" />
+      <workItem from="1666791341571" duration="75000" />
+      <workItem from="1666791420845" duration="29000" />
+      <workItem from="1666791588594" duration="23000" />
+      <workItem from="1666791664782" duration="65000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
