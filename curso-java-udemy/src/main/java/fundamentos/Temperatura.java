@@ -10,18 +10,18 @@ public class Temperatura {
 
         fahrenheit = 86.0;
         celsius = (fahrenheit - ADJUST ) * FACTOR;
-        System.out.println(String.format("%.2f fahrenheit será equivalente a %.2f celsius", fahrenheit, celsius));
+        System.out.printf("%.2f fahrenheit será equivalente a %.2f celsius%n", fahrenheit, celsius);
 
         fahrenheit = 150.0;
         celsius = (fahrenheit - ADJUST ) * FACTOR;
-        System.out.println(String.format("%.2f fahrenheit será equivalente a %.2f celsius", fahrenheit, celsius));
+        System.out.printf("%.2f fahrenheit será equivalente a %.2f celsius%n", fahrenheit, celsius);
 
         fahrenheit = 0;
         celsius = (fahrenheit - ADJUST ) * FACTOR;
-        System.out.println(String.format("%.2f fahrenheit será equivalente a %.2f celsius", fahrenheit, celsius));
+        System.out.printf("%.2f fahrenheit será equivalente a %.2f celsius%n", fahrenheit, celsius);
 
         fahrenheit = 32;
         celsius = (fahrenheit - ADJUST ) * FACTOR;
-        System.out.println(String.format("%.2f fahrenheit será equivalente a %.2f celsius", fahrenheit, celsius));
+        System.out.printf("%.2f fahrenheit será equivalente a %.2f celsius%n", fahrenheit, celsius);
     }
 }
